@@ -1,14 +1,18 @@
 # Standalone SPM docker image
-This is a minimal docker image for SPM Standalone. For more info see: https://en.wikibooks.org/wiki/SPM/Standalone .
+This is a minimal docker image for SPM Standalone.
 The image takes **577.38MB** compressed and **1.07GB** extracted.
+
+For more information see: https://en.wikibooks.org/wiki/SPM/Standalone .
 
 # How to use
 1. Pull the image on your local machine:
 ```
 docker pull alerokhin/spm-min:12
 ```
-2. Download the [example batch script](https://raw.githubusercontent.com/commandercool/spm-min/main/auditory_spm12_batch.m) and save it in `C:\spm-min-test`.
+
+2. Download the [example batch script](https://raw.githubusercontent.com/commandercool/spm-min/main/auditory_spm12_batch.m) and save it in `C:\spm-min-test` directory.
 This is a slightly adjusted script of well-known [auditory example](https://www.fil.ion.ucl.ac.uk/spm/data/auditory/), available on the SPM official page.
+
 3. Run the example script with the following command:
 ```
 docker run -v "C:\spm-min-test":/data alerokhin/spm-min script /data/auditory_spm12_batch.m
@@ -42,4 +46,5 @@ Downloading Auditory dataset...         :                        ...done
 ------------------------------------------------------------------------
 04-Oct-2020 16:06:22 - Running 'Realign: Estimate & Reslice'
 ```
-4. Wait for job to complete and go to the `C:\spm-min-test` to check results.
+
+4. Wait for the job to complete and go to `C:\spm-min-test` to check results.
