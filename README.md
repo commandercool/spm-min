@@ -1,10 +1,10 @@
 # Standalone SPM docker image
-This is a minimal docker image for SPM Standalone.
+This is a lightweight docker image for SPM Standalone.
 The image takes **577.38MB** compressed and **1.07GB** extracted.
 
 For more information see: https://en.wikibooks.org/wiki/SPM/Standalone .
 
-# How to use
+## How to use
 1. Pull the image on your local machine:
 ```
 docker pull alerokhin/spm-min:12
@@ -48,3 +48,9 @@ Downloading Auditory dataset...         :                        ...done
 ```
 
 4. Wait for the job to complete and go to `C:\spm-min-test` to check results.
+
+## Building from scratch
+Clone this repo and run:
+```
+docker build . -t alerokhin/spm-min
+```
