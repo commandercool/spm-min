@@ -1,7 +1,8 @@
 # Standalone SPM docker image
 This is a minimal docker image for SPM Standalone. For more info see: https://en.wikibooks.org/wiki/SPM/Standalone .
+The image takes 577.38MB compressed and 1.07GB extracted.
 
-# Ho to use
+# How to use
 1. Pull the image on your local machine:
 ```
 docker pull alerokhin/spm-min:12
