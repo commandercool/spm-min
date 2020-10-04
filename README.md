@@ -7,7 +7,7 @@ This is a minimal docker image for SPM Standalone. For more info see: https://en
 docker pull alerokhin/spm-min:12
 ```
 2. Download the [example batch script](https://raw.githubusercontent.com/commandercool/spm-min/main/auditory_spm12_batch.m) and save it in `C:\spm-min-test`.
-It is a slightly adjusted script of well-known [auditory example](https://www.fil.ion.ucl.ac.uk/spm/data/auditory/), available on the SPM official page.
+This is a slightly adjusted script of well-known [auditory example](https://www.fil.ion.ucl.ac.uk/spm/data/auditory/), available on the SPM official page.
 3. Run the example script with the following command:
 ```
 docker run -v "C:\spm-min-test":/data alerokhin/spm-min script /data/auditory_spm12_batch.m
