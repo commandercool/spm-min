@@ -10,7 +10,7 @@ docker pull alerokhin/spm-min:12
 It is a slightly adjusted script of well-known [auditory example](https://www.fil.ion.ucl.ac.uk/spm/data/auditory/), available on the SPM official page.
 3. Run the example script with the following command:
 ```
-docker run -it -v "C:\spm-min-test":/data alerokhin/spm-min script /data/auditory_spm12_batch.m
+docker run -v "C:\spm-min-test":/data alerokhin/spm-min script /data/auditory_spm12_batch.m
 ```
 At the beginning of execution, you should see the following output:
 ```
